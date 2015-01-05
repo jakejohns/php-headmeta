@@ -69,6 +69,23 @@ class Image
     }
 
     /**
+    * __invoke
+    *
+    * @param mixed $val DESCRIPTION
+    *
+    * @return mixed
+    *
+    * @access public
+    */
+    public function __invoke($val = null)
+    {
+        if ($val) {
+            $this->setValue($val);
+        }
+        return $this;
+    }
+
+    /**
     * setValue
     *
     * @param mixed $value DESCRIPTION
