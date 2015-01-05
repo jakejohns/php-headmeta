@@ -133,8 +133,8 @@ class MetaHelperFactory
                         $aura->get('links')
                     );
                 },
-                'container' => function () use ($escaper) {
-                    return new Helper\Container($escaper);
+                'containerClass' => function () use ($escaper) {
+                    return new Helper\ContainerClass($escaper);
                 },
                 'metas' => function () use ($aura) {
                     return $aura->get('metas');
