@@ -60,6 +60,7 @@ class MetaHelper implements HelpersInterface
     const VIEWPORT = 'viewport';
     const URL      = 'url';
     const LOC      = 'locale';
+    const DESC     = 'description';
 
     protected $defaults = [
         self::TITLE,
@@ -74,6 +75,7 @@ class MetaHelper implements HelpersInterface
         self::VIEWPORT,
         self::URL,
         self::LOC,
+        self::DESC,
     ];
 
     /**
@@ -136,7 +138,8 @@ class MetaHelper implements HelpersInterface
             self::COMPAT,
             self::VIEWPORT,
             self::URL,
-            self::LOC
+            self::LOC,
+            self::DESC
         ];
 
         foreach ($include as $inc) {
@@ -152,7 +155,6 @@ class MetaHelper implements HelpersInterface
     * foot
     *
     * @return string
-    * @throws exceptionclass [description]
     *
     * @access public
     */
