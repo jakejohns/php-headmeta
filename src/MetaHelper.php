@@ -43,7 +43,7 @@ use Jnj\Support\Interfaces\HelpersInterface;
  *
  * @see      HelpersInterface
  */
-class MetaHelper extends HelpersInterface
+class MetaHelper implements HelpersInterface
 {
 
     use HelpersTrait;
