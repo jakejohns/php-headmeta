@@ -73,6 +73,18 @@ class Charset
             'charset' => $this->getValue()
         ];
     }
+
+    /**
+    * getPosition
+    *
+    * @return mixed
+    *
+    * @access protected
+    */
+    protected function getPosition()
+    {
+        return 10;
+    }
 }
 
 
