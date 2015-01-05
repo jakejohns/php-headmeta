@@ -129,6 +129,7 @@ class MetaHelper implements HelpersInterface
     protected function process(array $include)
     {
         $process = [
+            self::TITLE,
             self::ROBOTS,
             self::ICONS,
             self::CHARSET,
