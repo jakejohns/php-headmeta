@@ -28,7 +28,7 @@
 namespace Jnj\HeadMeta;
 
 use Aura\Html\HelperLocator as AuraHelperLocator;
-use Aura\Html\Escaper as AuraExcaper;
+use Aura\Html\Escaper as AuraEscaper;
 
 /**
  * HelperLocatorFactory
