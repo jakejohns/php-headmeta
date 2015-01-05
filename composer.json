@@ -1,0 +1,29 @@
+{
+    "name": "jnj/php-headmeta",
+    "description": "helpers for html head content",
+    "repositories": [
+        {
+            "url": "https://github.com/jakejohns/php-support.git",
+            "type": "git"
+        }
+    ],
+
+    "require": {
+        "jnj/php-support":"dev-master",
+        "aura/html": "~2.1",
+        "illuminate/support": "~4.2",
+        "patchwork/utf8": "~1.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Jnj\\HeadMeta\\": "src/",
+            "Jnj\\HeadMeta\\_Config\\": "config/"
+        }
+    },
+    "authors": [
+        {
+            "name": "jake johns",
+            "email": "jake@jakejohns.net"
+        }
+    ]
+}
