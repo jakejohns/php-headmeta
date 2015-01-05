@@ -218,6 +218,19 @@ trait MetaPropertyTrait
     }
 
     /**
+    * getPosition
+    *
+    * @return mixed
+    * @throws exceptionclass [description]
+    *
+    * @access protected
+    */
+    protected function getPosition()
+    {
+        return 100;
+    }
+
+    /**
     * doProcess
     *
     * @return mixed
@@ -228,7 +241,7 @@ trait MetaPropertyTrait
     protected function doProcess()
     {
         if ($this->getValue()) {
-            $this->metas->add($this->toArray());
+            $this->metas->add($this->toArray(), $this->getPosition());
             return true;
         }
         return false;
