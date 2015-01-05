@@ -78,7 +78,7 @@ class MetaHelperFactory
         $escaper = $this->escaper;
         $aura = $this->aura;
 
-        return new HelperLocator(
+        return new MetaHelper(
             [
                 'title' => function () use ($aura, $escaper) {
                     return new Helper\Title(
