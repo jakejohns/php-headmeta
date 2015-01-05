@@ -61,6 +61,7 @@ class MetaHelper implements HelpersInterface
     const URL      = 'url';
     const LOC      = 'locale';
     const DESC     = 'description';
+    const IMG      = 'image';
 
     protected $defaults = [
         self::TITLE,
@@ -76,6 +77,7 @@ class MetaHelper implements HelpersInterface
         self::URL,
         self::LOC,
         self::DESC,
+        self::IMG
     ];
 
     /**
@@ -139,7 +141,8 @@ class MetaHelper implements HelpersInterface
             self::VIEWPORT,
             self::URL,
             self::LOC,
-            self::DESC
+            self::DESC,
+            self::IMG
         ];
 
         foreach ($include as $inc) {

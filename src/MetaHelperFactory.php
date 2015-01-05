@@ -127,6 +127,12 @@ class MetaHelperFactory
                         $aura->get('metas')
                     );
                 },
+                'image' => function () use ($aura) {
+                    return new Helper\Image(
+                        $aura->get('metas'),
+                        $aura->get('links')
+                    );
+                },
                 'container' => function () use ($escaper) {
                     return new Helper\Container($escaper);
                 },
