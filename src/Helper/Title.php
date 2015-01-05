@@ -109,7 +109,6 @@ class Title
     */
     public function __toString()
     {
-        $this->process();
         $auraTitle = $this->auraTitle;
         return (string) $auraTitle();
     }
